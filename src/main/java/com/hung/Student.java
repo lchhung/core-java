@@ -18,4 +18,11 @@ public class Student extends Person implements StudentAction{
     public void takeExam() {
         System.out.println(this.getName() + " take exam");
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "certificate='" + certificate + '\'' +
+                '}';
+    }
 }
